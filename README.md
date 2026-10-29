@@ -1,12 +1,12 @@
-#Crossed Backend
+# Crossed Backend
 
 Django REST API for the Crossed dating app.
 
-##Overview
+## Overview
 
 This backend handles user registration and authentication. It is designed to communicate with the React frontend.
 
-##Features
+## Features
 
 - **Registration:** Creates new user accounts and stores additional registration details.
 - **Login:** Authenticates users using their email and password.
@@ -14,7 +14,7 @@ This backend handles user registration and authentication. It is designed to com
 - **Token Refresh:** Allows users to obtain new access tokens.
 - **Logout:** Blacklists refresh tokens to prevent further use.
 
-##API Endpoints
+## API Endpoints
 
 Method| Endpoint| Description
 POST| "/api/register/"| Register a new user
@@ -22,7 +22,7 @@ POST| "/api/token/"| Log in and receive JWT tokens
 POST| "/api/token/refresh/"| Refresh authentication tokens
 POST| "/api/logout/"| Log out and blacklist a refresh token
 
-##Installation
+## Installation
 
 Install the required packages:
 
@@ -36,7 +36,7 @@ Start the Django development server:
 
 /// python manage.py runserver
 
-##Important Notes
+## Important Notes
 
 - Login requires an email address and password.
 - Protected endpoints require an access token.
