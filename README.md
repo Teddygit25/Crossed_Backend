@@ -29,15 +29,21 @@ This backend handles user registration and authentication. It is designed to com
 
 Install the required packages:
 
-```pip install -r requirements.txt
+```powershell
+pip install -r requirements.txt
+```
 
 Apply database migrations:
 
-```python manage.py migrate
+```powershell
+python manage.py migrate
+```
 
 Start the Django development server:
 
-```python manage.py runserver
+```powershell
+python manage.py runserver
+```
 
 ## Important Notes
 
