@@ -14,27 +14,30 @@ This backend handles user registration and authentication. It is designed to com
 - **Token Refresh:** Allows users to obtain new access tokens.
 - **Logout:** Blacklists refresh tokens to prevent further use.
 
+
 ## API Endpoints
 
-Method| Endpoint| Description
-POST| "/api/register/"| Register a new user
-POST| "/api/token/"| Log in and receive JWT tokens
-POST| "/api/token/refresh/"| Refresh authentication tokens
-POST| "/api/logout/"| Log out and blacklist a refresh token
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/register/` | Register a new user |
+| POST | `/api/token/` | Log in and receive JWT tokens |
+| POST | `/api/token/refresh/` | Refresh authentication tokens |
+| POST | `/api/logout/` | Log out and blacklist a refresh token |
+
 
 ## Installation
 
 Install the required packages:
 
-///pip install -r requirements.txt
+```pip install -r requirements.txt
 
 Apply database migrations:
 
-/// python manage.py migrate
+```python manage.py migrate
 
 Start the Django development server:
 
-/// python manage.py runserver
+```python manage.py runserver
 
 ## Important Notes
 
